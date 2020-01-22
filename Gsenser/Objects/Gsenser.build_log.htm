@@ -1,0 +1,101 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: £gVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Clark Chen, N.E.E.T., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.25.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DARMCM1.DLL V1.19.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.15.2
+Dialog DLL:      TARMCM1.DLL V1.14.0.0
+ 
+<h2>Project:</h2>
+C:\Users\54675\OneDrive\®à­±\Gsenser\Gsenser.uvprojx
+Project File Date:  10/23/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling RFoutput.c...
+compiling main.c...
+compiling I2C.c...
+I2C.c(179): warning:  #111-D: statement is unreachable
+      printf("AX:%d AY:%d AZ:%d\n",mp[0],mp[1],mp[2]);
+I2C.c(184): warning:  #1-D: last line of file ends without a newline
+   
+I2C.c: 2 warnings, 0 errors
+compiling sys.c...
+compiling spi.c...
+compiling clk.c...
+assembling startup_Nano100Series.s...
+compiling retarget.c...
+compiling system_Nano100Series.c...
+compiling uart.c...
+linking...
+Program Size: Code=8144 RO-data=396 RW-data=104 ZI-data=2768  
+".\Objects\Gsenser.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+Package Vendor: Nuvoton
+                http://www.nuvoton.com/hq/enu/Documents/KEILSoftwarePack/Nuvoton.NuMicro_DFP.1.0.7.pack
+                Nuvoton.NuMicro_DFP.1.0.7
+                Nuvoton ARM Cortex-M NuMicro Family Device Support
+   * Component: CLK Version: 3.01.000
+   * Component: SPI Version: 3.01.000
+   * Component: SYS Version: 3.01.000
+   * Component: UART Version: 3.01.000
+   * Component: Startup Version: 3.01.000
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Nuvoton\NuMicro_DFP\1.0.7\Device\NANO100BN\Driver
+  C:\Keil_v5\ARM\PACK\Nuvoton\NuMicro_DFP\1.0.7\Device\NANO100BN\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+
+   * Component: Nuvoton::Device:Driver:CLK:3.01.000
+      Include file:  Device\NANO100BN\Driver\clk.h
+      Source file:   Device\NANO100BN\Driver\clk.c
+
+   * Component: Nuvoton::Device:Driver:SPI:3.01.000
+      Include file:  Device\NANO100BN\Driver\spi.h
+      Source file:   Device\NANO100BN\Driver\spi.c
+
+   * Component: Nuvoton::Device:Driver:SYS:3.01.000
+      Include file:  Device\NANO100BN\Driver\sys.h
+      Source file:   Device\NANO100BN\Driver\sys.c
+
+   * Component: Nuvoton::Device:Driver:UART:3.01.000
+      Source file:   Device\NANO100BN\Driver\uart.c
+      Include file:  Device\NANO100BN\Driver\uart.h
+
+   * Component: Nuvoton::Device:Startup:3.01.000
+      Include file:  Device\NANO100BN\Include\Nano100Series.h
+      Source file:   Device\NANO100BN\Source\ARM\startup_Nano100Series.s
+      Source file:   Device\NANO100BN\Driver\retarget.c
+      Source file:   Device\NANO100BN\Source\system_Nano100Series.c
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
